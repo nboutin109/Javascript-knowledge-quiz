@@ -1,29 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="container h-100 d-flex justify-content-center page1" id="startPage">
-    <div class="jumbotron my-auto page2">
-      <h1 class="display-3">Javascript knowledge check quiz!</h1>
+    <div class="container h-100 d-flex justify-content-center first" id="startPage">
+        <div class="jumbotron my-auto first">
+            <h1 class="display-3 first">Javascript knowledge check quiz!</h1>
+        </div>
     </div>
+    <div class="container h-100 d-flex justify-content-center first">
+        <p class="row first">Welcome! When you click the start button a timer will start along with the quiz</p>
+
     </div>
-    <div class="container h-100 d-flex justify-content-center page1">
-        <p class="row">Welcome! When you click the start button a timer will start along with the quiz</p>
-        
+    <div class="container h-100 d-flex justify-content-center first">
+        <p class="row first">Beware! If you miss a question, you will also lose additional time!</p>
     </div>
-    <div class="container h-100 d-flex justify-content-center page1">
-        <p class="row">Beware! If you miss a question, you will also lose additional time!</p>
+    <div class="container h-100 d-flex justify-content-center first">
+        <button class="btn btn-primary first" id="start">Start!</button>
     </div>
-    <div class="container h-100 d-flex justify-content-center page1">
-        <button class="btn btn-primary" id="start" onclick = "location.href = 'solutionpg2.html'">Start!</button>
-    </div>
-    
- <script src="script.js"></script>
+    <container class="invisible second" id="second">
+        <div class="container h-100 d-flex justify-content-center time" id='time'></div>
+        <div class="container h-100 d-flex justify-content-center" id='questionDiv'>2</div>
+        <div class="row">
+            <div class="col"></div>
+            <div class="container-fluid justify-content-center col" style='padding-top: 1rem; padding-bottom: 1rem'>
+                <div class="custom-control custom-radio row">
+                    <input type="radio" id="A" name="choices" class="custom-control-input">
+                    <label class="custom-control-label" for="A" id="A1">A</label>
+                </div>
+                <div class="custom-control custom-radio row">
+                    <input type="radio" id="B" name="choices" class="custom-control-input">
+                    <label class="custom-control-label" for="B" id="A2">B</label>
+                </div>
+                <div class="custom-control custom-radio row">
+                    <input type="radio" id="C" name="choices" class="custom-control-input">
+                    <label class="custom-control-label" for="C" id="A3">C</label>
+                </div>
+                <div class="custom-control custom-radio row">
+                    <input type="radio" id="D" name="choices" class="custom-control-input">
+                    <label class="custom-control-label" for="D" id="A4">D</label>
+                </div>
+            </div>
+            <div class="col"></div>
+        </div>
+        <div class="container h-100 d-flex justify-content-center">
+            <button id='nextQuestion' class="btn btn-primary">Next Question</button>
+        </div>
+        <div class="container h-100 d-flex justify-content-center" id='correctness'
+            style="padding-top: 3 rem; font-weight: 100;"></div>
+        <div class="container h-100 d-flex justify-content-center" id='scoreDiv'
+            style="padding-top: 1 rem; font-weight: 100;"></div>
+        <div class="container h-100 d-flex justify-content-center" id='errorDiv' style="font-weight: 800;"></div>
+    </container>
+    <container class="invisible perfect-centering" id="third">
+        <h1 id="resultsDiv"></h1>
+        <div class="row">
+            <div class="col-4"></div>
+            <button id='tryAgain' class="btn btn-primary col-3">Try again?</button>
+            <div class="col-4"></div>
+        </div>
+    </container>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="Scripts/questions.js"></script>
+    <script src="Scripts/script.js"></script>
+
+
 </body>
+
 </html>
