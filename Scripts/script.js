@@ -7,7 +7,6 @@ function render() {
     $('.first').hide();
     $('#second').removeClass('invisible');
     time = questions.length * 20
-    timer = setInterval(clockTick, 1000);
     $("#time").html("Your remaining time is: " + time);
 }
 
@@ -48,6 +47,7 @@ function end() {
 $('#start').click(function () {
     render();
     setQuestion();
+    timer = setInterval(clockTick, 1000);
 })
 
 $('#nextQuestion').click(function () {
