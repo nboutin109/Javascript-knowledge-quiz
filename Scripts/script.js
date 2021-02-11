@@ -56,11 +56,11 @@ $('#nextQuestion').click(function () {
         return;
     }
     else { $("#errorDiv").html("") }
+    checking();
     if (time <= 0 || index == 4) {
         end();
         return;
     }
-    checking();
     index++;
     setQuestion();
 })
