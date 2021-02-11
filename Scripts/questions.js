@@ -29,12 +29,12 @@ var questions = [{
     correct: 'C'
 },
 {
-    Question: "Question",
+    Question: "What is the purpose of isNaN?",
     Answers: {
-        A: "Answer",
-        B: "Answer",
-        C: "Answer",
-        D: "Answer"
+        A: "It will reverse a designated array",
+        B: "It creates a banana in your code",
+        C: "It will tell you if a presented argument is a boolean",
+        D: "It returns True if the presented argument is not a number, or False if it is"
     },
     correct: 'D'
 },
