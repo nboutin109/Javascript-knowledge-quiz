@@ -1,7 +1,7 @@
 # Title
 <p>Javascript knowledge check quiz</p>
 <p>A timed 5 question quiz designed to test the user on JavaScript knowledge. Keeps the user's score and penalizes time for missed questions.</p>
-<a><img src="Capture1.PNG" height="250px" width="250px"/></a>
+<a href="https://nboutin109.github.io/Javascript-knowledge-quiz/"><img src="Capture1.PNG" height="250px" width="250px"/></a>
  
 
 # Installation
@@ -15,5 +15,5 @@
 </ul>
 
 ## Code Overview
- The index.html file is rendered by browser and styled with the included .css file and Bootstrap. The script.js page hides the first page and renders the first question when the start button is clicked, while also starting a timer. The html values of the divs containing the question and answers are switched each time the next button is clicked, and missing a question will subtract 15 seconds from the remaining time. The quiz ends when time runs out or all 5 questions are answered and the score is then displayed.
+ The index.html file is rendered by the browser and styled with the included .css file and Bootstrap. The script.js page hides the first page and renders the first question when the start button is clicked, while also starting a timer. The html values of the divs containing the question and answers are switched each time the next button is clicked, and missing a question will subtract 15 seconds from the remaining time. The quiz ends when time runs out or all 5 questions are answered and the score is then displayed.
 
