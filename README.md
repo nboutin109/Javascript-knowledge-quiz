@@ -15,5 +15,5 @@
 </ul>
 
 ## Code Overview
- The index.html file is rendered by the browser and styled with the included .css file and Bootstrap. The script.js page hides the first page and renders the first question when the start button is clicked, while also starting a timer. The html values of the divs containing the question and answers are switched each time the next button is clicked, and missing a question will subtract 15 seconds from the remaining time. The quiz ends when time runs out or all 5 questions are answered and the score is then displayed.
+ The index.html file is rendered by the browser and styled with the included .css file and Bootstrap. The script.js page hides the original page and renders the first question when the start button is clicked, while also starting a timer. The html values of the divs containing the question and answers are replaced each time the next button is clicked, and missing a question will subtract 15 seconds from the remaining time. The quiz ends when time runs out or all 5 questions are answered and the score is then displayed.
 
